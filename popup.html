@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head> ChromeTest System Info </head>
+<head>
+  <title>ChromeTest System Info</title>
+</head>
 <body>
-    <h1>Collect System Info</h1>
-    <button id="collectInfo">Collect Info</button>
-  
-    <script>
-      document.getElementById('collectInfo').addEventListener('click', () => {
-        chrome.runtime.sendMessage({ action: 'collectSystemInfo' });
-      });
-    </script>
-  </body>
-  </html>
+  <h1>Collect System Info</h1>
+  <button id="collectInfo">Collect Info</button>
+
+  <script>
+    document.getElementById('collectInfo').addEventListener('click', () => {
+      chrome.runtime.sendMessage({ action: 'collectSystemInfo' });
+    });
+  </script>
+</body>
+</html>

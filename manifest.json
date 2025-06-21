@@ -7,7 +7,6 @@
     "system.cpu",
     "system.memory",
     "system.storage",
-    "fileSystem",
     "downloads"
   ],
   "background": {
@@ -15,9 +14,5 @@
   },
   "action": {
     "default_popup": "popup.html"
-    
-  
-}
   }
-
-
+}
