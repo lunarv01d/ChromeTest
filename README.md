@@ -137,6 +137,14 @@ Ensuring compatibility with both older and newer versions of Chrome OS could be 
 Conclusion:
 
 The Chromebook extension is a versatile tool for anyone looking to understand, maintain, and optimize their Chromebook’s performance. By offering detailed system insights, easy-to-understand documentation, and a user-friendly interface, this extension promises to be a valuable addition for Chromebook users across various fields, from education to IT support and even general consumers.
+## Running Tests
+
+Automated tests verify that the extension's `manifest.json` contains all required fields.
+
+```bash
+npm install
+npm test
+```
 
 ### Contact Us
 
