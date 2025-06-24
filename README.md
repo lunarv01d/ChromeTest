@@ -15,7 +15,7 @@ Welcome to ChromeTest! This privacy policy explains how we handle your data whil
 ### Information We Collect
 
 * **Keystroke Logging** : ChromeTest collects keystroke data solely for the purpose of testing keyboard functionality and implementing shortcuts within the app. This logging is done locally on your device and is not transmitted to any server.
-* **Device Information** : We may collect basic system information about your Chromebook (such as CPU, memory, storage, and network status) to generate diagnostic reports. This information helps provide accurate test results.
+* **Device Information** : We may collect basic system information about your Chromebook (such as CPU, memory, and storage) to generate diagnostic reports. This information helps provide accurate test results.
 
 ### How We Use Your Data
 
@@ -137,6 +137,14 @@ Ensuring compatibility with both older and newer versions of Chrome OS could be 
 Conclusion:
 
 The Chromebook extension is a versatile tool for anyone looking to understand, maintain, and optimize their Chromebook’s performance. By offering detailed system insights, easy-to-understand documentation, and a user-friendly interface, this extension promises to be a valuable addition for Chromebook users across various fields, from education to IT support and even general consumers.
+## Running Tests
+
+Automated tests verify that the extension's `manifest.json` contains all required fields.
+
+```bash
+npm install
+npm test
+```
 
 ### Contact Us
 
