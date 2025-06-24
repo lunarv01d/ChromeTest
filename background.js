@@ -1,4 +1,5 @@
 function collectSystemInfo() {
+
   // Get CPU information
   chrome.system.cpu.getInfo((cpuInfo) => {
     // Get Memory information
@@ -24,6 +25,7 @@ function collectSystemInfo() {
           url: url,
           filename: 'system-info.json',
           saveAs: true
+
         });
       });
     });
@@ -32,9 +34,10 @@ function collectSystemInfo() {
 
 chrome.action.onClicked.addListener(collectSystemInfo);
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === 'collectSystemInfo') {
+
+chrome.runtime.onMessage.addListener((request) => {
+  if (request.action === 'collectSystemInfo') {
     collectSystemInfo();
   }
 });
-  
+
